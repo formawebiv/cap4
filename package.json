@@ -1,0 +1,24 @@
+{
+  "name": "cap4",
+  "version": "1.0.0",
+  "description": "pedidos dos",
+  "main": "index.js",
+  "author": "nunhes",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "prebuild": "npx rimraf build",
+    "dev": "parcel src/index.html src/js/validation.js scss/style.scss src/assets/*",
+    "build": "parcel build src/index.html src/js/index.js src/js/validation.js scss/styles.scss src/components/* --public-url . -d build/" 
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.7.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.49.0"
+  }
+}
